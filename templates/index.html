@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataMapperProject</title>
+</head>
+<body>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+        <h1 style="margin-bottom: 20px;">Upload Your CSV File</h1>
+        <form action="/upload-csv/" method="post" enctype="multipart/form-data" style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+            <input type="file" name="file" accept=".csv" style="margin-bottom: 10px;">
+            <button type="submit" style="cursor: pointer; padding: 10px 20px; font-size: 16px;background-color: #007B9E">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
