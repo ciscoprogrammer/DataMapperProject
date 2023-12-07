@@ -56,10 +56,10 @@ These instructions will get you a copy of the project up and running on your loc
     python -m venv venv
     
 
-    1. On Windows:
+
 
         
-        .\venv\Scripts\activate
+   .\venv\Scripts\activate
         
 
    
