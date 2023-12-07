@@ -56,17 +56,13 @@ These instructions will get you a copy of the project up and running on your loc
     python -m venv venv
     
 
-    - On Windows:
+    1. On Windows:
 
         
         .\venv\Scripts\activate
         
 
-    - On Unix or MacOS:
-
-        
-        source venv/bin/activate
-
+   
 
         
 
