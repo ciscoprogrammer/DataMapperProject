@@ -20,14 +20,14 @@ async def read_root(request: Request):
 @app.post("/upload-csv/")
 async def handle_csv(file: UploadFile = File(...)):
     conn = get_db_connection()
-    # Decode with 'utf-8-sig' to handle UTF-8 with BOM. 
+    # Decoding with 'utf-8-sig' to handle UTF-8 with BOM. 
     # If there's no BOM, it will work as usual for UTF-8.
     data = await file.read()
     reader = csv.reader(io.StringIO(data.decode('utf-8-sig')))
 
     # Assuming first row is the header
     headers = next(reader)
-    # Use strip to remove any whitespace that might be around the column names
+    # Using strip to remove any whitespace that might be around the column names
     headers = [h.strip() for h in headers]
     try:
         name_index = headers.index("Name")
